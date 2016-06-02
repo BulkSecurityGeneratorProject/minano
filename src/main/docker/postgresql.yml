@@ -1,0 +1,12 @@
+version: '2'
+services:
+    minano-postgresql:
+        container_name: minano-postgresql
+        image: postgres:9.5.2
+        # volumes:
+        #     - ~/volumes/jhipster/minano/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=minano
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
